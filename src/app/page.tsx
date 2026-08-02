@@ -9,10 +9,6 @@ import {
   GitHubIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
 import logoBAE from '@/images/logos/bae.png'
 import logoUSW from '@/images/logos/usw.jpg'
 import logoNM from '@/images/logos/NM.jpg'
