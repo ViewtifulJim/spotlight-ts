@@ -15,16 +15,25 @@ function SocialLink({
   href,
   children,
   icon: Icon,
+  target,
+  rel,
+  'aria-label': ariaLabel,
 }: {
   className?: string
   href: string
   icon: React.ComponentType<{ className?: string }>
   children: React.ReactNode
+  target?: string
+  rel?: string
+  'aria-label'?: string
 }) {
   return (
     <li className={clsx(className, 'flex')}>
       <Link
         href={href}
+        target={target}
+        rel={rel}
+        aria-label={ariaLabel}
         className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
       >
         <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
@@ -101,10 +110,13 @@ export default function About() {
         </div>
         <div className="lg:pl-20">
           <ul role="list">
-            <SocialLink href="#" icon={GitHubIcon} className="mt-4">
+            <SocialLink href="https://github.com/ViewtifulJim"
+                          target="_blank"
+                          rel="noopener noreferrer" icon={GitHubIcon} className="mt-4">
               Follow on GitHub
             </SocialLink>
-            <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
+            <SocialLink href="https://www.linkedin.com/in/james-colin-williams/" target="_blank"
+                          rel="noopener noreferrer"icon={LinkedInIcon} className="mt-4">
               Follow on LinkedIn
             </SocialLink>
             <SocialLink
