@@ -43,7 +43,7 @@ export default function Uses() {
   return (
     <SimpleLayout
       title="The hardware, software, and tools I use every day."
-      intro="People often ask what I use for software development, studying, and everyday work. My setup is a mix of Apple hardware for development, a powerful Windows desktop for gaming, and a collection of tools that help me stay productive while building web applications and Java projects. I believe good tools don't make great developers, but they can make the process far more enjoyable. These are the ones I find myself reaching for every day."
+      intro="My setup is a mix of Apple hardware for development, a powerful Windows desktop for gaming, and a collection of tools that help me stay productive while building web applications and Java projects. I believe good tools don't make great developers, but they can make the process far more enjoyable. These are the ones I find myself reaching for every day."
     >
       <div className="space-y-20">
         <ToolsSection title="Workstation">
