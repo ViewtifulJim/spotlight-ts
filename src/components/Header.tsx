@@ -14,7 +14,7 @@ import {
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import avatarImage from '@/images/avatar.jpg'
+import portraitImage from '@/images/portrait.jpeg'
 
 function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -233,7 +233,7 @@ function Avatar({
       {...props}
     >
       <Image
-        src={avatarImage}
+        src={portraitImage}
         alt=""
         sizes={large ? '4rem' : '2.25rem'}
         className={clsx(
