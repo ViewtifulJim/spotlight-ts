@@ -3,48 +3,35 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+
+
+import flightcontroller from '@/images/logos/flightcontroller.png'
+import gmap from '@/images/logos/gmap.png'
+import grade from '@/images/logos/grade.png'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'Remote Flight Controller',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+      'The Remote Flight Simulator is a C# Windows Forms application for remotely controlling an aircraft and receiving telemetry data. It uses a custom RemoteFlightController class as the core interface for communication with the flight simulator.',
+    link: { href: 'https://github.com/ViewtifulJim/Remote-Flight-Controller', label: 'github.com' },
+    logo: flightcontroller,
   },
   {
-    name: 'Animaginary',
+    name: 'GMAP Tool',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+      'The GMap Tool was created to allow the user to perform CRUD operations on a connected MongoDB database using geospatial data. It provides the functionality to plot points and store this data in the database alongside many other features.',
+    link: { href: 'https://github.com/ViewtifulJim/GMap-Tool', label: 'github.com' },
+    logo: gmap,
   },
   {
-    name: 'HelioStream',
+    name: 'Grade Calculator',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
+      'The Grade Calculator is a basic user-friendly application designed to help students efficiently manage and calculate their grades. This tool streamlines the process of tracking academic performance across various assignments and exams.',
+    link: { href: 'https://github.com/ViewtifulJim/Grade-Calculator', label: 'github.com' },
+    logo: grade,
   },
-  {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
-  },
+  
 ]
 
 function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
@@ -66,9 +53,9 @@ export const metadata: Metadata = {
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Things I’ve made trying to put my dent in the universe."
-      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
-    >
+        title="Projects I've built."
+        intro="A selection of personal and university projects that showcase my experience with software development. Each project has helped me learn new technologies, solve real-world problems, and improve as a developer."
+      >
       <ul
         role="list"
         className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"

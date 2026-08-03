@@ -223,7 +223,7 @@ function Resume() {
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Work & Education</span>
+        <span className="ml-3">Experience</span>
       </h2>
       <ol className="mt-6 space-y-4">
         {resume.map((role, roleIndex) => (
@@ -286,11 +286,10 @@ export default async function Home() {
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             
-            Graduate Technology Engineer based in the UK. Currently working in
-            the in the defence sector, gaining experience across technology development and 
-            multidisciplinary projects. Building a strong foundation in problem-solving, 
-            collaboration, and project delivery, while developing skills to contribute to 
-            innovative and reliable engineering solutions.
+            Graduate Technology Engineer based in the UK, 
+            developing software and technology solutions within the defence industry. 
+            Passionate about building reliable systems, solving complex problems, 
+            and continuously learning new technologies.
 
           </p>
           <div className="mt-6 flex gap-6">
