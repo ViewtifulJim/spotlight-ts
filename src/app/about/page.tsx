@@ -96,14 +96,14 @@ export default function About() {
             <p>
               I enjoy writing clean, maintainable code and creating user experiences that
               are simple, intuitive, and enjoyable to use. For me, software development is
-              about more than just making things work—it's about building products that are
+              about more than just making things work, it's about building products that are
               reliable, thoughtful, and well-designed.
             </p>
 
             <p>
               Outside of programming, I enjoy endurance sports, hiking, and spending time
-              outdoors. I believe the same mindset that helps me improve in sport—staying
-              consistent, embracing challenges, and always learning—is what drives me as a
+              outdoors. I believe the same mindset that helps me improve in sport, staying
+              consistent, embracing challenges, and always learning, is what drives me as a
               developer every day.
             </p>
           </div>
